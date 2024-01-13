@@ -1,0 +1,22 @@
+Example of onClick Event Handlers changing DOM Elements
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Life Happens</title>
+    <script>
+        function toggleImage() {
+            var img = document.getElementById('toggleImage');
+            if (img.src.endsWith('kitten.png')) {
+                img.src = 'lion.png';
+            } else {
+                img.src = 'kitten.png';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>Your wife before marriage and after marriage</h3>
+    <img width="300" id="toggleImage" src="lion.png" onclick="toggleImage()" style="cursor: pointer;" />
+</body>
+</html>
